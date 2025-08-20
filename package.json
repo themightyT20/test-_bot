@@ -1,0 +1,21 @@
+{
+  "name": "nsfw-guardian-bot",
+  "version": "1.0.0",
+  "description": "Discord bot that detects and removes NSFW images/videos, warns users, and builds its own training dataset.",
+  "main": "bot.js",
+  "type": "module",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^4.20.0",
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "jimp": "^0.22.12",
+    "node-fetch": "^3.3.2",
+    "nsfwjs": "^2.4.0"
+  }
+}
