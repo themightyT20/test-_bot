@@ -1,21 +1,33 @@
 {
-  "name": "nsfw-guardian-bot",
+  "name": "discord-furry-nsfw-bot",
   "version": "1.0.0",
-  "description": "Discord bot that detects and removes NSFW images/videos, warns users, and builds its own training dataset.",
+  "description": "Discord bot for NSFW and furry content moderation",
   "main": "bot.js",
   "type": "module",
   "scripts": {
-    "start": "node bot.js"
-  },
-  "engines": {
-    "node": ">=18.0.0"
+    "start": "node bot.js",
+    "dev": "node bot.js",
+    "setup": "node setup.js"
   },
   "dependencies": {
-    "@tensorflow/tfjs-node": "^4.20.0",
-    "discord.js": "^14.15.3",
-    "dotenv": "^16.4.5",
-    "jimp": "^0.22.12",
+    "@huggingface/inference": "^2.6.4",
+    "@tensorflow/tfjs-node": "^3.20.0",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
     "node-fetch": "^3.3.2",
-    "nsfwjs": "^2.4.0"
-  }
+    "nsfwjs": "^2.4.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "moderation",
+    "nsfw",
+    "furry",
+    "tensorflow",
+    "image-classification"
+  ],
+  "license": "GPL-3.0"
 }
